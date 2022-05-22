@@ -3,19 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@babel/core": "^7.0.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
     "@fontsource/montez": "^4.5.8",
-    "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.0",
+    "@mui/system": "^5.8.0",
     "@reduxjs/toolkit": "^1.8.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^17.0.0 || ^18.0.0 ^16.8 || ^17.0 || ^18.0",
+    "@types/react-dom": "^16.8 || ^17.0 || ^18.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-native": ">=0.59",
     "react-redux": "^8.0.1",
-    "react-scripts": "5.0.1",
+    "redux": "^4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -25,17 +26,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
