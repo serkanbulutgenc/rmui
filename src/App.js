@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Home, ListAlt } from "@mui/icons-material";
+import { Button, Container, Divider, Typography } from "@mui/material";
+import { useSelector, useDispatch } from "react-redux";
+import SiteAppbar from "./components/appbar";
+import { login, logout } from "./store/userSlice";
+
+
 
 function App() {
+
+  const dispatch = useDispatch()
+
+  const onlineUsers = useSelector((state) => state.user.onlineUsers)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="xl" sx={{ p: 1, backgroundColor: 'grey' }}>
+
+      <SiteAppbar />
+
+    </Container>
   );
 }
 
